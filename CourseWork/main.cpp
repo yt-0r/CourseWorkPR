@@ -3309,8 +3309,8 @@ void bot(int choise) {
                 isPlayerTurn = 1;
                 break;
             }
-            if (countPlayer > 1 && grid[2][1] == 2 && grid[0][0] == 0) {    //если игрок не защищается, бот ставит крестик и выйгрывает
-                grid[0][2] = 1;
+            if (countPlayer > 1 && grid[0][0] == 0) {    //если игрок не защищается, бот ставит крестик и выйгрывает
+                grid[0][0] = 1;
                 countPlayer++;
                 countGame++;
                 break;  //win
